@@ -11,9 +11,9 @@ pipeline {
 				steps {
 		
                     sh " rm -rf * "
-		                sh "git clone https://github.com/Rohit0698/master-dev-qa-22q1-22q2-22q3.git"
-	                  sh " docker run -itdp 81-85:80 --name testmaster httpd "
-	                  sh " chmod -R 777 /mnt/22q1 "
+		                sh "https://github.com/dikshadhole/master-repo.git"
+	                        sh " docker run -itdp 81-85:80 --name testmaster httpd "
+	                        sh " chmod -R 777 /mnt/22q1 "
 		                sh " docker cp /mnt/22q1/master-dev-qa-22q1-22q2-22q3/index.html testmaster:/usr/local/apache2/htdocs "
                     
                     
